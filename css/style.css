@@ -1,0 +1,252 @@
+@font-face{
+  font-family: "Menu";
+  src: url("../css/fonts/FontsFree-Net-SFProDisplay-Semibold.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "Testo";
+  src: url("../css/fonts/Nobile-Regular.ttf") format("truetype");
+}
+
+body{
+  background-image: url(../images/background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  margin-bottom: 0px;
+}
+
+div.all{
+  width: 1032px;
+  height: 1152px;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.microsoftback{
+  background: linear-gradient(84deg, rgba(1,138,234,1) 0%, rgba(60,208,253,1) 100%);
+  width: 1032px;
+  height: 396px;
+  margin-top: 145px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+div.appleback{
+  background: linear-gradient(84deg, rgba(199,206,216,1) 0%, rgba(159,170,183,1) 100%);
+  width: 1032px;
+  height: 396px;
+  margin-top: 100px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+div.opensourceback{
+  background: linear-gradient(84deg, rgba(23,184,82,1) 0%, rgba(56,248,169,1) 100%);
+  width: 1032px;
+  height: 396px;
+  margin-top: 100px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+p.left{
+  font-family: 'Testo';
+  padding-top: 100px;
+  padding-bottom: 75px;
+  margin-left: 550px;
+  margin-right: 60px;
+  text-align: left;
+  line-height: 1.75;
+}
+
+p.right{
+  font-family: 'Testo';
+  padding-top: 120px;
+  padding-bottom: 60px;
+  margin-right: 550px;
+  margin-left: 40px;
+  text-align: right;
+  line-height: 1.75;
+}
+
+/*inizio menu*/
+a.menu, a.active{
+  font-family: 'Menu';
+  font-size: 14px;
+  line-height: 3.14286;
+  height: 32px;
+  font-weight: 400;
+  color: #f5f5f7;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding-top: 0px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+  
+ul{
+  padding-left: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+  
+li{
+  display: inline;
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+a{
+  list-style: none;
+  transition: all 0.4s;
+}
+
+a:hover{
+  transform: scale(1.1);
+}
+
+a:hover{
+  transform: scale(1.1);
+}
+
+a:visited{
+  color: white;
+}
+
+a:link{
+  text-decoration: none;
+  color: white;
+}
+
+a.active:visited {
+  color: #02073f;
+}
+
+a.active:link {
+  text-decoration: none;
+  color: #02073f;
+}
+  
+div.menu{
+  background-color: rgba(119, 136, 153, 1);
+  text-align: center;
+  z-index: 2;
+  font-size: 20px;
+  padding: 1px;
+  margin-top: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 10px;
+}
+
+div.copytext{
+  position: absolute;
+  padding-top: 290px;
+  margin-top: 20px;
+  z-index: -1;
+  right: 10px;
+}
+
+.logo{
+  padding-top: 20px;
+  float: left;
+  margin-left: -400px;
+  position: fixed;
+}
+
+/*inizio dropdown*/
+div.menu li:hover ul.dropdown-content{
+  opacity: 1;
+  visibility: visible;
+}
+
+ul.dropdown-content {
+  font-family: "Menu";
+  padding: 30px 30px 30px 30px;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 30px; 
+  left: -29px; /**/
+  z-index: 2;
+  background: rgba(119,136,153,0.75);
+  color:white;
+  border-radius: 0px 0px 30px 30px;
+  font-size: 15px;
+}
+
+ul.dropdown-content li {
+  float: none;
+  display: block;
+  border: 0;
+}
+
+ul.dropdown-content a {
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+  color:white;
+
+}
+
+ul.dropdown-content a:hover {
+  background-color: #0186ba;
+  color: #fff;
+  margin: 10px 10px 10px 10px;
+  }
+
+ul.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*fine dropdown*/
+/*fine menu*/
+
+div.copytext{
+  position: absolute;
+  padding-top: 290px;
+  margin-top: 20px;
+  z-index: -1;
+  right: 10px;
+}
+
+img.Billone{
+  width: 450px;
+  float: right;
+  margin-right: 55px;
+  margin-top: -280px;
+  transition: all 0.4s;
+}
+
+img.Steve{
+  width: 450px;
+  float: left;
+  margin-left: 55px;
+  margin-top: 70px;
+  transition: all 0.4s;
+}
+
+img.Richard{
+  width: 450px;
+  float: right;
+  margin-top: -300px;
+  margin-right: 55px;
+  transition: all 0.4s;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+
+.logo{
+  padding-top: 20px;
+  float: left;
+  margin-left: -400px;
+  position: fixed;
+}

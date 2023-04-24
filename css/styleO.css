@@ -1,0 +1,224 @@
+@font-face{
+  font-family: "Menu";
+  src: url("../css/fonts/FontsFree-Net-SFProDisplay-Semibold.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "OpenSource";
+  src: url("../css/fonts/Louis_George_Cafe") format("truetype");
+}
+  
+body{
+  background-image: url(../images/background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  margin-bottom: 0px;
+}
+  
+div.all{
+  width: 1032px;
+  height: 1040px;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.opensourceback{
+  background: linear-gradient(84deg, rgba(23,184,82,0.7) 0%, rgba(56,248,169,0.7) 100%);
+  width: 1032px;
+  height: 396px;
+  border-radius: 30px 30px 30px 30px;
+}
+/*inizio menu*/
+a.menu, a.active{
+  font-family: 'Menu';
+  font-size: 14px;
+  line-height: 3.14286;
+  height: 32px;
+  font-weight: 400;
+  color: #f5f5f7;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding-top: 0px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+  
+ul{
+  padding-left: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+  
+li{
+  display: inline;
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+a{
+  list-style: none;
+  transition: all 0.4s;
+}
+
+a:hover{
+  transform: scale(1.1);
+}
+
+a:hover{
+  transform: scale(1.1);
+}
+
+a:visited{
+  color: white;
+}
+
+a:link{
+  text-decoration: none;
+  color: white;
+}
+
+a.active:visited {
+  color: #02073f;
+}
+
+a.active:link {
+  text-decoration: none;
+  color: #02073f;
+}
+  
+div.menu{
+  background-color: rgba(119, 136, 153, 1);
+  text-align: center;
+  z-index: 2;
+  font-size: 20px;
+  padding: 1px;
+  margin-top: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 10px;
+}
+
+div.copytext{
+  position: absolute;
+  padding-top: 290px;
+  margin-top: 20px;
+  z-index: -1;
+  right: 10px;
+}
+
+.logo{
+  padding-top: 20px;
+  float: left;
+  margin-left: -400px;
+  position: fixed;
+}
+
+/*inizio dropdown*/
+div.menu li:hover ul.dropdown-content{
+  opacity: 1;
+  visibility: visible;
+}
+
+ul.dropdown-content {
+  font-family: "Menu";
+  padding: 30px 30px 30px 30px;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 30px; 
+  left: -29px; /**/
+  z-index: 2;
+  background: rgba(119,136,153,0.75);
+  color:white;
+  border-radius: 0px 0px 30px 30px;
+  font-size: 15px;
+}
+
+ul.dropdown-content li {
+  float: none;
+  display: block;
+  border: 0;
+}
+
+ul.dropdown-content a {
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+  color:white;
+
+}
+
+ul.dropdown-content a:hover {
+  background-color: #0186ba;
+  color: #fff;
+  margin: 10px 10px 10px 10px;
+  }
+
+ul.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*fine dropdown*/
+/*fine menu*/
+
+.story{
+  color: white;
+  font-family: "OpenSource";
+  margin-left: 230px;
+  padding-top: 170px;
+  font-size: 70px;
+}
+
+img.story{
+  float:right;
+  margin-right: 215px;
+  margin-top: -380px;
+  width: 240px;
+  transition: all 0.4s;
+}
+  
+img:hover{
+  transition: all 0.4s;
+  transform: scale(1.1);
+}
+
+.center{
+  color: white;
+  font-family: "OpenSource";
+  text-align: center;
+  padding-top: 25px;
+  font-size: 70px;
+}
+
+.os1{
+  width: 160px;
+  margin-left: 270px;
+  margin-top: -10px;
+}
+
+.os2{
+  float: right;
+  width: 200px;
+  margin-right: 215px;
+  margin-left: 200px;
+  margin-top: -220px;
+}
+
+.os3{
+  width: 465px;
+  margin-top: -60px;
+  margin-left: 290px;
+}
+
+img{
+  z-index: 2;
+}
